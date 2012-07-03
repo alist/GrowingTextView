@@ -98,11 +98,11 @@
 	UIButton *doneBtn = [UIButton buttonWithType:UIButtonTypeCustom];
 	doneBtn.frame = CGRectMake(containerView.frame.size.width - 69, 8, 63, 27);
     doneBtn.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin;
-	[doneBtn setTitle:@"Done" forState:UIControlStateNormal];
+	[doneBtn setTitle:@"Post" forState:UIControlStateNormal];
     
     [doneBtn setTitleShadowColor:[UIColor colorWithWhite:0 alpha:0.4] forState:UIControlStateNormal];
     doneBtn.titleLabel.shadowOffset = CGSizeMake (0.0, -1.0);
-    doneBtn.titleLabel.font = [UIFont boldSystemFontOfSize:18.0f];
+    doneBtn.titleLabel.font = [UIFont boldSystemFontOfSize:16.0f];
     
     [doneBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 	[doneBtn addTarget:self action:@selector(resignTextView) forControlEvents:UIControlEventTouchUpInside];
